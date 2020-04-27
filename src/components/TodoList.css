@@ -1,6 +1,63 @@
-.todo-list{
+.todo-list {
     text-align: center;
     background: #FFA07A;
     line-height: 1.4;
     padding: 1rem;
+    border: 1px solid #FFA07A;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px #CD5C5C;
 }
+
+.todo-list input {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px #CD5C5C;
+}
+
+.todo-list h1 {
+    font-family: "Lucida Console", Courier, monospace;
+    text-shadow: 0 2px 4px #504c4c;
+}
+
+.list {
+    list-style-type: none;
+    padding: 1cm;
+}
+
+.todo {
+    display: flex;
+    text-align: left;
+    background: #FFD3C2;
+    padding: 1%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #CD5C5C;
+    
+}
+
+.todo a {
+     margin-left: auto;
+     text-decoration: none;
+     padding: 2px 5px;
+     font-weight: bold;
+     opacity: 0.5;
+     background-color: #f44336;
+     color: white;
+     text-align: center;
+     display: inline-block;
+     box-sizing: border-box;
+     box-shadow: 0 2px 4px #CD5C5C;
+ }
+
+ .todo a:hover {
+     opacity: 1;
+ }
