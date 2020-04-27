@@ -45,7 +45,7 @@
 }
 
 .todo a {
-     margin-left: auto;
+     /*margin-left: auto;*/
      text-decoration: none;
      padding: 2px 5px;
      font-weight: bold;
