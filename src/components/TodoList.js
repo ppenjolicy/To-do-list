@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { firestore } from '../index'
 import './TodoList.css'
+import { Container, Row, Col } from 'reactstrap';
+import FacebookLogin from './Facebook'
 
 function App() {
 
@@ -39,6 +41,10 @@ function App() {
     firestore.collection("tasks").doc(id + '').set({ id, name })
   }
 
+  const doneTask = (id) => {
+    firestore.collection("tasks").doc(id + '')
+  }
+
   const renderTask = () => {
     if (tasks && tasks.length)
       return tasks.map((task, index) => {
@@ -56,6 +62,9 @@ function App() {
 
   return (
     <div className="todo-list">
+      <Container>
+        <Row>
+          <Col>
       <h1>Todo List</h1>
       <form onSubmit={addTask}>
       <input placeholder="Enter your new activity..." type='text' name='name' onChange={(e) => { setName(e.target.value) }}></input>
@@ -65,6 +74,9 @@ function App() {
            </li>
       </ul>
       </form>
+      </Col>
+      </Row>
+      </Container>
     </div>
   );
 }
