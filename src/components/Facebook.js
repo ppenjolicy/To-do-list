@@ -45,7 +45,7 @@ export default class Facebook extends Component {
                                 <img src={this.state.picture} alt={this.state.name}/>
                                 <h2 style={{fontSize: '20px'}}>Welcome <br/>{this.state.name}!</h2></Col>
                             <Col>
-                                <TodoList />
+                                <TodoList/>
                             </Col>
                         </Row>
                     </Container>
