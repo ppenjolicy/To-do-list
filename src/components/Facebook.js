@@ -32,13 +32,7 @@ export default class Facebook extends Component {
 
         this.state.auth ?
             facebookData = (
-                <div /*style={{
-                    width: '400px',
-                    margin: 'auto',
-                    background: '#f4f4f4',
-                    padding: '20px',
-                    color: '#000'
-                }}*/>
+                <div>
                     <Container>
                         <Row>
                             <Col xs="3" style={{ alignContent: 'center', paddingTop: '10%' }} className="todo-list">
